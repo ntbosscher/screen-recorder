@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9098FB942951E7BC003CAE86 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9098FB932951E7BC003CAE86 /* main.swift */; };
+		9098FB9C2951E82B003CAE86 /* ScreenCaptureKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9098FB9B2951E82B003CAE86 /* ScreenCaptureKit.framework */; };
+		9098FB9E2951F9E7003CAE86 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9098FB9D2951F9E7003CAE86 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +25,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9098FB902951E7BC003CAE86 /* Selenium Recorder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Selenium Recorder"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9098FB902951E7BC003CAE86 /* Screen Recorder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Screen Recorder"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9098FB932951E7BC003CAE86 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9098FB9B2951E82B003CAE86 /* ScreenCaptureKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenCaptureKit.framework; path = System/Library/Frameworks/ScreenCaptureKit.framework; sourceTree = SDKROOT; };
+		9098FB9D2951F9E7003CAE86 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9098FB9E2951F9E7003CAE86 /* AVFoundation.framework in Frameworks */,
+				9098FB9C2951E82B003CAE86 /* ScreenCaptureKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,13 +49,14 @@
 			children = (
 				9098FB922951E7BC003CAE86 /* Selenium Recorder */,
 				9098FB912951E7BC003CAE86 /* Products */,
+				9098FB9A2951E82B003CAE86 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		9098FB912951E7BC003CAE86 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9098FB902951E7BC003CAE86 /* Selenium Recorder */,
+				9098FB902951E7BC003CAE86 /* Screen Recorder */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,12 +69,21 @@
 			path = "Selenium Recorder";
 			sourceTree = "<group>";
 		};
+		9098FB9A2951E82B003CAE86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9098FB9D2951F9E7003CAE86 /* AVFoundation.framework */,
+				9098FB9B2951E82B003CAE86 /* ScreenCaptureKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9098FB8F2951E7BC003CAE86 /* Selenium Recorder */ = {
+		9098FB8F2951E7BC003CAE86 /* Screen Recorder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9098FB972951E7BC003CAE86 /* Build configuration list for PBXNativeTarget "Selenium Recorder" */;
+			buildConfigurationList = 9098FB972951E7BC003CAE86 /* Build configuration list for PBXNativeTarget "Screen Recorder" */;
 			buildPhases = (
 				9098FB8C2951E7BC003CAE86 /* Sources */,
 				9098FB8D2951E7BC003CAE86 /* Frameworks */,
@@ -77,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = "Selenium Recorder";
+			name = "Screen Recorder";
 			productName = "Selenium Recorder";
-			productReference = 9098FB902951E7BC003CAE86 /* Selenium Recorder */;
+			productReference = 9098FB902951E7BC003CAE86 /* Screen Recorder */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -97,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9098FB8B2951E7BC003CAE86 /* Build configuration list for PBXProject "Selenium Recorder" */;
+			buildConfigurationList = 9098FB8B2951E7BC003CAE86 /* Build configuration list for PBXProject "Screen Recorder" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9098FB8F2951E7BC003CAE86 /* Selenium Recorder */,
+				9098FB8F2951E7BC003CAE86 /* Screen Recorder */,
 			);
 		};
 /* End PBXProject section */
@@ -265,7 +281,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9098FB8B2951E7BC003CAE86 /* Build configuration list for PBXProject "Selenium Recorder" */ = {
+		9098FB8B2951E7BC003CAE86 /* Build configuration list for PBXProject "Screen Recorder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9098FB952951E7BC003CAE86 /* Debug */,
@@ -274,7 +290,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9098FB972951E7BC003CAE86 /* Build configuration list for PBXNativeTarget "Selenium Recorder" */ = {
+		9098FB972951E7BC003CAE86 /* Build configuration list for PBXNativeTarget "Screen Recorder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9098FB982951E7BC003CAE86 /* Debug */,
